@@ -14,6 +14,7 @@ If you want to run it yourself on AWS, first, obviously, configure your AWS acco
     ssl_certificate_arn = "arn:aws:acm:us-east-1:747101050174:certificate/0816d2e4-1c07-44e0-99e0-55763e24615e"
     hosted_zone_id      = "Z04028672340GRJRXW460"
     hosted_zone_arn     = "arn:aws:route53:::hostedzone/Z04028672340GRJRXW460"
+    domain_name         = "tides.eve.gd"
 
 Then run:
 
