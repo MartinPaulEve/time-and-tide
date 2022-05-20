@@ -1,0 +1,6 @@
+requests
+lxml
+ics
+arrow
+typing_extensions
+tatsu
