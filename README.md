@@ -1,4 +1,9 @@
 # Time and Tide: iCal API for UK Tide Times
+iCal files for UK high tides.
+
+![Seascape](docs/banner.png)
+
+
 ![license](https://img.shields.io/github/license/martinpauleve/time-and-tide) ![activity](https://img.shields.io/github/last-commit/MartinPaulEve/time-and-tide)
 
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
@@ -6,6 +11,22 @@
 This AWS Lambda function produces an iCal calendar for the next seven days of high tides at the location specified in the location querystring.
 
 For example, you can see it in action/use it at [https://tides.eve.gd/ical?location=Broadstairs](https://tides.eve.gd/ical?location=Broadstairs).
+
+In its technical capacity, this project demonstrates how to wire a Python Lambda function to a subdomain with SSL/HTTPS on AWS. 
+
+## Features
+* iCal files for high tides at all UK locations. Valid locations at [tide times](https://www.tidetimes.org.uk/broadstairs-tide-times-20220519).
+* Synchronizes the next seven days.
+* Compatible with Google Calendar and other iCal-based systems.
+
+## Tech Features
+* Python lambda function.
+* Scraping approach to data collection.
+* Caching (while function is warm).
+* AWS Application Gateway.
+* Custom domain.
+* SSL support.
+* MIME type/content type passthrough.
 
 ## Running it Yourself
 
